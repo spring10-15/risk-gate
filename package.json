@@ -1,0 +1,60 @@
+{
+  "name": "risk-gate",
+  "version": "1.0.0",
+  "description": "🚦 操作风险检测 MCP Server - 实时检测 SQL、Shell 命令、API 调用等操作风险",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "risk-gate": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "risk-detection",
+    "security",
+    "sql",
+    "shell",
+    "cli",
+    "agent",
+    "claude",
+    "cursor"
+  ],
+  "author": {
+    "name": "一健",
+    "url": "https://github.com/yourusername"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/risk-gate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/risk-gate/issues"
+  },
+  "homepage": "https://github.com/yourusername/risk-gate#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+# Source files (we only publish build output)
+src/
+*.ts
+!*.d.ts
+
+# Tests
+test/
+tests/
+*.test.ts
+
+# Documentation (except README)
+*.md
+!README.md
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.github/
+
+# CI/CD
+.gitignore
+
+# Internal files
+.project/
+
+# Build
+build/
